@@ -10,30 +10,39 @@ import {
   Link,
   Input,
 } from "@heroui/react";
+import { Image } from "@heroui/image";
 import { IconHeadset, IconSearch, IconShoppingCart } from '@tabler/icons-react';
+import { DropdownUser } from '@/components/3-elements';
 
 export const Naavbar = () => {
 
   return (
     <Navbar isBordered>
 
-      <NavbarContent className="sm:hidden pr-3" justify="center">
+      <NavbarContent className="sm:hidden max-w-14 " justify="start">
         <NavbarBrand>
-          <strong>
-            Silver Shop
-          </strong>
+
+          <Image
+            src="./Isologosilvershop.png"
+            width={50}
+            height={50}
+            alt="Marca del sitio"
+          />
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex pr-3" justify="start">
+      <NavbarContent className="hidden sm:flex" justify="start">
         <NavbarBrand>
-          <strong>
-            Silver Shop
-          </strong>
+          <Image
+            src="./LOGOSILVER SHOP.png"
+            width={140}
+            height={50}
+            alt="Marca del sitio"
+          />
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className=" gap-4" justify="center">
+      <NavbarContent justify="center">
         <Input startContent={<IconSearch stroke={1} />} placeholder="Buscar" type='search' isClearable />
       </NavbarContent>
 
@@ -44,9 +53,10 @@ export const Naavbar = () => {
         <NavbarItem>
           <IconHeadset stroke={2} />
         </NavbarItem>
+        <DropdownUser></DropdownUser>
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden" justify="end">
+      <NavbarContent className="sm:hidden" justify="center">
         <NavbarMenuToggle />
       </NavbarContent>
 
