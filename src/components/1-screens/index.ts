@@ -1,2 +1,2 @@
 // start
-export * from "./start/page";
+export * from "./start/start";
