@@ -9,10 +9,12 @@ import {
   NavbarItem,
   Link,
   Input,
+  Button,
 } from "@heroui/react";
 import { Image } from "@heroui/image";
 import { IconHeadset, IconSearch, IconShoppingCart } from '@tabler/icons-react';
 import { DropdownUser } from '@/components/3-elements';
+
 
 export const Naavbar = () => {
 
@@ -27,6 +29,7 @@ export const Naavbar = () => {
             width={50}
             height={50}
             alt="Marca del sitio"
+            className='cursor-pointer'
           />
         </NavbarBrand>
       </NavbarContent>
@@ -38,6 +41,8 @@ export const Naavbar = () => {
             width={140}
             height={50}
             alt="Marca del sitio"
+            className='cursor-pointer'
+
           />
         </NavbarBrand>
       </NavbarContent>
@@ -48,10 +53,15 @@ export const Naavbar = () => {
 
       <NavbarContent justify="end" className='hidden sm:flex'>
         <NavbarItem >
-          <IconShoppingCart stroke={2} />
+          {/* <IconShoppingCart stroke={2} /> */}
+          <Button isIconOnly aria-label="Carrito de compras" variant="light" >
+            <IconShoppingCart stroke={2} />
+          </Button>
         </NavbarItem>
         <NavbarItem>
-          <IconHeadset stroke={2} />
+          <Button isIconOnly aria-label="Contactar" variant="light" >
+            <IconHeadset stroke={2} />
+          </Button>
         </NavbarItem>
         <DropdownUser></DropdownUser>
       </NavbarContent>
