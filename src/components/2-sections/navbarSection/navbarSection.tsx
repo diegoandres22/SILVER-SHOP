@@ -16,7 +16,7 @@ import { IconHeadset, IconSearch, IconShoppingCart } from '@tabler/icons-react';
 import { DropdownUser } from '@/components/3-elements';
 
 
-export const Naavbar = () => {
+export const NaavbarSection = () => {
 
   return (
     <Navbar isBordered>

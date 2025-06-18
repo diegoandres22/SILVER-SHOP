@@ -7,7 +7,7 @@ import {
   Link,
 } from "@heroui/react";
 
-export const Naavbar2 = () => {
+export const NaavbarSection2 = () => {
   const [activeItem, setActiveItem] = useState('');
 
   const handleClick = (item: React.SetStateAction<string>) => {

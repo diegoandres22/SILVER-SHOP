@@ -1,3 +1,6 @@
 // start
-export * from "./navbar/navbar";
-export * from "./navbar2/navbar2";
+export * from "./navbarSection/navbarSection";
+export * from "./navbarSection2/navbarSection2";
+
+//baner
+export * from "./banerSection/banerSection"

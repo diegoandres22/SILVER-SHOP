@@ -1,2 +1,2 @@
 // start
-export * from "./start/start";
+export * from "./startScreen/start";
