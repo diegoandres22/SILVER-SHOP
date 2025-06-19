@@ -15,7 +15,7 @@ export const NaavbarSection2 = () => {
   };
 
   return (
-    <Navbar isBordered className="h-6 hidden sm:flex ">
+    <Navbar isBordered className="h-6 hidden sm:flex static ">
       <NavbarContent justify="center" className="m-auto gap-8">
         <NavbarItem isActive={activeItem === 'temporada'}>
           <Link
